@@ -200,7 +200,7 @@ def print_gpu_info():
     print(f"CUDA GPUs detected: {count}\n")
     for i in range(count):
         props = torch.cuda.get_device_properties(i)
-        mem_gb = props.total_mem / (1024**3)
+        mem_gb = props.total_memory / (1024**3)
         print(f"  [{i}] {props.name}")
         print(f"      Compute capability: {props.major}.{props.minor}")
         print(f"      Memory:             {mem_gb:.1f} GB")
