@@ -41,3 +41,20 @@ The `problem.md` file should contain a description of the problem written in Mar
   - `const`: boolean
  
 Once you add a problem, make sure to test both correct (slow/fast) and incorrect submissions. Let us know if you encounter any issues/bugs!
+
+## Running Locally (WSL2)
+You can compile, verify, and benchmark CUDA solutions locally using the included runner. All you need is the CUDA Toolkit and PyTorch with CUDA support.
+
+See **[WSL2_SETUP.md](WSL2_SETUP.md)** for full setup instructions.
+
+Quick start (after setup):
+```bash
+# Verify correctness
+python3 run_local.py vector-addition examples/vector_addition.cu
+
+# Verify + benchmark
+python3 run_local.py vector-addition examples/vector_addition.cu --benchmark
+
+# Use a small sample test case for quick debugging
+python3 run_local.py vector-addition examples/vector_addition.cu --sample
+```

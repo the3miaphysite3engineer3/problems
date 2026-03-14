@@ -224,3 +224,9 @@ cython_debug/
 # Binary build artifacts
 engine/skeleton/benchmark
 engine/skeleton/checker
+
+# CUDA build artifacts
+*.o
+*.cubin
+*.fatbin
+*.ptx
