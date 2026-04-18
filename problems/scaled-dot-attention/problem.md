@@ -23,3 +23,12 @@ Where Q, K, and V are the query, key, and value matrices, and $E$ is the embeddi
 - Input matrices are stored in a row-major format
 - You can assume that the embedding dimension is the same for query, key and value matrices ($\text{E}$)
 - Similarly, the number of heads is the same for query, key and value matrices ($\text{H}$)
+
+## Test Case Sizes
+
+- Batch=8, Heads=16, Seq_len=512, Embed_dim=64
+- Batch=16, Heads=32, Seq_len=256, Embed_dim=64
+- Batch=4, Heads=32, Seq_len=1024, Embed_dim=32
+- Batch=32, Heads=8, Seq_len=512, Embed_dim=128
+- Batch=8, Heads=16, Seq_len=512, Embed_dim=256
+- Batch=8, Heads=16, Seq_len=2048, Embed_dim=64

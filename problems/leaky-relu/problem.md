@@ -30,3 +30,14 @@ $$
 ## Notes:
 - Both matrices $\text{A}$ and $\text{C}$ are stored in row-major order
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/20_LeakyReLU.py)
+
+## Test Case Sizes
+
+- 4096x4096, alpha=0.01
+- 4096x4096, alpha=0.05
+- 4096x4096, alpha=0.1
+- 4096x4096, alpha=0.2
+- 6144x4096, alpha=0.01
+- 6144x4096, alpha=0.05
+- 6144x4096, alpha=0.1
+- 6144x4096, alpha=0.2

@@ -24,3 +24,11 @@ where the sum of absolute values is computed across the second dimension (D) for
 - For numerical stability, you may need to add a small epsilon $\epsilon = 10^{-10}$ to the denominator to avoid division by zero.
 - After normalization, the L1 norm of each row should be approximately 1.0.
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/38_L1Norm_.py)
+
+## Test Case Sizes
+
+- B=128, D=4096
+- B=256, D=4096
+- B=128, D=8192
+- B=256, D=8192
+- B=128, D=16384

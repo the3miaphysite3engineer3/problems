@@ -33,3 +33,11 @@ $$
 - Both matrices $\text{A}$ and $\text{C}$ are stored in row-major order
 - You should implement the approximation formula for GELU defined above
 - GELU is commonly used in modern transformer-based neural networks like BERT and GPT
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x4096
+- 4096x7168
+- 4096x8192
+- 8192x8192

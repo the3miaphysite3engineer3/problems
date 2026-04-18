@@ -29,3 +29,11 @@ $$
 ## Notes:
 - Both matrices $\text{A}$ and $\text{C}$ are stored in row-major order
 - The Hard Sigmoid function is a piecewise linear approximation of the standard Sigmoid function
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x4096
+- 4096x7168
+- 4096x8192
+- 8192x8192

@@ -22,3 +22,10 @@ The MST connects all $n$ vertices using exactly $n - 1$ edges with minimum total
 
 ## Output
 - Total weight of the minimum spanning tree, written to `min_weight`. Return $-1$ if graph is not connected.
+
+## Test Case Sizes
+
+- n = 1024
+- n = 2048
+- n = 4096
+- n = 6144

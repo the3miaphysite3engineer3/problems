@@ -21,3 +21,11 @@ $$
 ## Notes:
 - Matrix $\text{A}$ is stored in row-major order
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/4_Matrix_vector_multiplication_.py)
+
+## Test Case Sizes
+
+- M=4096, K=4096
+- M=6144, K=4096
+- M=7168, K=4096
+- M=8192, K=4096
+- M=9216, K=4096

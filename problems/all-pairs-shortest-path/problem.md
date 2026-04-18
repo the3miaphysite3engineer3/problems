@@ -20,3 +20,10 @@ Given a weighted directed graph represented as an adjacency matrix, compute the 
 - A 2D tensor of shape $(n, n)$ containing the shortest distances between all pairs of vertices
 - `output[i][j]` = shortest distance from vertex `i` to vertex `j`
 - If no path exists between vertices `i` and `j`, the distance should be `-1`
+
+## Test Case Sizes
+
+- n = 512
+- n = 1024
+- n = 2048
+- n = 4096

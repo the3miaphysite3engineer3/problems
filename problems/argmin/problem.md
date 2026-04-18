@@ -30,3 +30,12 @@ where $d$ is the dimension to perform argmin over, $n$ is the number of dimensio
 - The output indices are 0-based
 - The output tensor has one fewer dimension than the input tensor
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/52_Argmin_over_a_dimension.py)
+
+## Test Case Sizes
+
+- shape=(16, 128, 256), dim=1
+- shape=(32, 512, 512), dim=0
+- shape=(8, 1024, 1024), dim=2
+- shape=(64, 128, 128, 128), dim=2
+- shape=(4, 256, 256, 256), dim=1
+- shape=(128, 64, 64, 64), dim=3

@@ -27,3 +27,11 @@ Where $\lambda \approx 1.0507$ and $\alpha \approx 1.67326$ are predetermined co
 ## Notes:
 - Both matrices $\text{A}$ and $\text{C}$ are stored in row-major order
 - SELU was introduced in the paper "Self-Normalizing Neural Networks" to help preserve the mean and variance of signals flowing through neural networks
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x4096
+- 4096x7168
+- 4096x8192
+- 8192x8192

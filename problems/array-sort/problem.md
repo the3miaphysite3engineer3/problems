@@ -19,3 +19,11 @@ Sort an array of integers in ascending order.
 ## Notes:
 
 - The input array $a$ is stored in row-major order in memory
+
+## Test Case Sizes
+
+- size = 16384
+- size = 32768
+- size = 65536
+- size = 131072
+- size = 262144

@@ -28,3 +28,11 @@ It can be seen as a smooth approximation of the ReLU function.
 - Both matrices $\text{A}$ and $\text{C}$ are stored in row-major order
 - Softplus is a smooth approximation to the ReLU function and ensures a non-zero gradient for all input values
 - Unlike ReLU, which has a sharp transition at x=0, Softplus provides a smooth transition
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x4096
+- 4096x7168
+- 4096x8192
+- 8192x8192

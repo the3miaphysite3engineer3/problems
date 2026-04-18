@@ -74,4 +74,11 @@ Step-by-step execution:
 - Multiple valid topological orderings may exist for the same DAG
 - Ensure deterministic output by processing vertices in a consistent order
 - For performance, leverage GPU parallelism where possible
-- Consider memory access patterns for large graphs 
+- Consider memory access patterns for large graphs
+
+## Test Case Sizes
+
+- n = 1024
+- n = 2048
+- n = 4096
+- n = 6144

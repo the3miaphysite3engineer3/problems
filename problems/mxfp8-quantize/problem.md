@@ -27,3 +27,10 @@ For more information regarding the MXFP8 format, check out the [MXFP8 specificat
 ## Notes
 - The required layout is row-major blocked order (no additional swizzle).
 - Verification dequantizes both reference and submitted outputs via TorchAO MXTensor dequantization and checks closeness.
+
+## Test Case Sizes
+
+- 1024 x 1024
+- 2048 x 2048
+- 4096 x 8192
+- 8192 x 4096

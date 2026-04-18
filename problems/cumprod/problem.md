@@ -23,3 +23,11 @@ The cumulative product at each position is the product of all elements up to and
 - The first element of the output is equal to the first element of the input
 - Be careful about numerical stability with very large or very small numbers
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/90_cumprod.py)
+
+## Test Case Sizes
+
+- N=65536
+- N=131072
+- N=262144
+- N=524288
+- N=1048576

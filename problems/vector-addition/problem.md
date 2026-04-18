@@ -16,3 +16,13 @@ $$
 
 ## Output
 - Vector $c$ of length $N$ containing the element-wise sum
+
+## Test Case Sizes
+
+- n = 2^20
+- n = 2^22
+- n = 2^23
+- n = 2^25
+- n = 2^26
+- n = 2^29
+- n = 2^30

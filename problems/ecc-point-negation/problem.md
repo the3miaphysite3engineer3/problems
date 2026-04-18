@@ -32,3 +32,10 @@ Your kernel must produce the exact negation for every point in the batch.
 - A single array `out_xy` of length $2N$, storing the results as pairs:
   - `out_xy[2*i] = xs[i]`
   - `out_xy[2*i + 1] = (p - ys[i]) % p`
+
+## Test Case Sizes
+
+- N = 262,144
+- N = 524,288
+- N = 1,048,576
+- N = 2,097,152

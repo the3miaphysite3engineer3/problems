@@ -24,3 +24,11 @@ $$
 ## Notes
 - Dequantization semantics match [TorchAO MXTensor](https://github.com/pytorch/ao/blob/main/torchao/prototype/mx_formats/mx_tensor.py) (`to_dtype`) for MXFP4.
 - The `scale` input is row-major blocked order (not swizzled).
+
+## Test Case Sizes
+
+- 1024 x 1024
+- 2048 x 2048
+- 4096 x 4096
+- 8192 x 4096
+- 4096 x 8192

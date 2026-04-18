@@ -28,3 +28,12 @@ The average pooling operation slides a window of size $k$ over the input tensor 
 - For values outside the input boundaries (after padding), use zero values in the average computation
 - The denominator ($k$) should always be the full kernel size, even when some elements are outside the input boundaries
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/44_Average_Pooling_1D.py)
+
+## Test Case Sizes
+
+- H=2097152, K=7, S=4, P=3
+- H=4194304, K=2, S=1, P=0
+- H=8388608, K=3, S=2, P=1
+- H=16777216, K=4, S=2, P=1
+- H=33554432, K=3, S=1, P=1
+- H=67108864, K=5, S=3, P=2

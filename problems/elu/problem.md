@@ -34,3 +34,11 @@ Where α is a parameter controlling the value to which an ELU saturates for nega
 ## Notes:
 - Both matrices $\text{A}$ and $\text{C}$ are stored in row-major order
 - ELU has smoother transitions at x=0 compared to ReLU and helps mitigate the "dying ReLU" problem
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x4096
+- 4096x7168
+- 4096x8192
+- 8192x8192

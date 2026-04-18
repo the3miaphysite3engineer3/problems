@@ -163,9 +163,29 @@ const extractGetFlops = (pythonCode: string): string | null => {
 
 async function main() {
   const problemsDir = getProblemsDir();
-  let problemSlugs = readdirSync(problemsDir).filter(
-    (slug) => slug !== ".DS_Store" && slug !== "__pycache__"
+  let problemSlugs = readdirSync(problemsDir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .filter((slug) => slug !== "__pycache__");
+
+  const incompleteSlugs = problemSlugs.filter(
+    (slug) => !existsSync(getProblemPath(slug)) || !existsSync(getDefinitionPath(slug))
   );
+  if (incompleteSlugs.length > 0) {
+    const details = incompleteSlugs
+      .map((slug) => {
+        const missing = [
+          !existsSync(getProblemPath(slug)) ? "problem.md" : null,
+          !existsSync(getDefinitionPath(slug)) ? "def.py" : null,
+        ].filter(Boolean);
+        return `  - ${slug}: missing ${missing.join(", ")}`;
+      })
+      .join("\n");
+
+    throw new Error(
+      `Every folder in ${problemsDir} must be a complete problem folder with both problem.md and def.py.\n${details}`
+    );
+  }
 
   const filterSlugs = process.argv.slice(2).filter((arg) => !arg.startsWith("-"));
   if (filterSlugs.length > 0) {

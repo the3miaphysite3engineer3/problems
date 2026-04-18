@@ -26,3 +26,12 @@ This creates a blurring effect by smoothing out pixel values. The larger the ker
 ## Notes:
 - The input tensor is a single-channel grayscale image
 - Handle edge cases by only averaging available pixels (no padding)
+
+## Test Case Sizes
+
+- 1920x1080, kernel=15x15
+- 1920x1080, kernel=21x21
+- 1920x1080, kernel=27x27
+- 2048x2048, kernel=15x15
+- 2048x2048, kernel=21x21
+- 2048x2048, kernel=27x27

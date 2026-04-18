@@ -33,3 +33,11 @@ This is equivalent to $y = A_{\mathrm{dequant}} x_{\mathrm{dequant}}$ with:
 ## Notes
 - The reference implementation dequantizes NVFP4 inputs with [FlashInfer decode](https://docs.flashinfer.ai/generated/flashinfer.fp4_quantization.e2m1_and_ufp8sf_scale_to_float.html) semantics, then computes GEMV as `matmul` in FP32 before casting to FP16 output.
 - $scale\_a$ and $scale\_x$ are already in NVFP4 swizzled scale layout expected by the decode path, do **not** apply an additional swizzle.
+
+## Test Case Sizes
+
+- 1024 x 1024
+- 2048 x 2048
+- 4096 x 4096
+- 8192 x 4096
+- 4096 x 8192

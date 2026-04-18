@@ -102,3 +102,10 @@ Your kernel must:
 
 This task is integer-heavy with modular inverses.  
 We’ll count ~12 ops per element, but score mainly by runtime.
+
+## Test Case Sizes
+
+- N = 262,144
+- N = 524,288
+- N = 1,048,576
+- N = 2,097,152

@@ -23,3 +23,10 @@ The running sum operation slides the window over the input data and computing th
 - $\text{W}$ is odd and smaller than $\text{N}$
 - Use zero padding at the boundaries where the window extends beyond the input data
 - The window is centered at each position, with $(W-1)/2$ elements on each side
+
+## Test Case Sizes
+
+- N=65536, W=8191
+- N=32768, W=8191
+- N=131072, W=8191
+- N=524288, W=8191
