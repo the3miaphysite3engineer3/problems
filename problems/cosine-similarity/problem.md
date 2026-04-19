@@ -32,3 +32,10 @@ $$
 - To handle numerical stability, use $\epsilon = 10^{-8}$ in the denominator as shown in the formula above
 - The norm of a vector is calculated as the square root of the sum of squares of its elements
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/97_CosineSimilarityLoss.py)
+
+## Test Case Sizes
+
+- N=4096, D=4096
+- N=8192, D=4096
+- N=10240, D=4096
+- N=16384, D=4096

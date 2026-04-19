@@ -33,3 +33,10 @@ where $i$ iterates through all elements of the tensor.
 - The Frobenius norm is equivalent to treating the tensor as a flattened vector and computing its L2 norm.
 - Every element in the output tensor will have the same normalization factor applied.
 - The implementation should be able to handle tensors of _any_ dimensionality.
+
+## Test Case Sizes
+
+- shape=(4, 1024, 1024)
+- shape=(32, 128, 128)
+- shape=(8, 32, 256, 256)
+- shape=(4, 16, 32, 128, 128)

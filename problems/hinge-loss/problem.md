@@ -36,3 +36,10 @@ $$
 - Target values must be either -1 or 1
 - The loss is non-negative and equals 0 only when the prediction has the correct sign and magnitude $\geq$ 1
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/100_HingeLoss.py)
+
+## Test Case Sizes
+
+- N=1048576
+- N=4194304
+- N=16777216
+- N=67108864

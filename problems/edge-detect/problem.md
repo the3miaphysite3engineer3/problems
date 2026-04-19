@@ -34,3 +34,11 @@ This algorithm computes horizontal and vertical gradients, then combines them to
 - The input tensor is a single-channel grayscale image
 - Only compute gradients for interior pixels (ignore 1-pixel border)
 - Border pixels remain zero in the output
+
+## Test Case Sizes
+
+- 1024x768
+- 1920x1080
+- 2048x2048
+- 2560x1440
+- 4096x4096

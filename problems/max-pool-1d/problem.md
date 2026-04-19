@@ -30,3 +30,12 @@ The max pooling operation slides a window of size $k \times k$ over the input te
 - For values outside the input boundaries (after padding), use negative infinity
 - Dilation controls the spacing between kernel elements, creating an effective kernel size of $D(k-1) + 1$
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/41_Max_Pooling_1D.py)
+
+## Test Case Sizes
+
+- H=2097152, K=7, S=4, P=3, d=1
+- H=4194304, K=2, S=1, P=0, d=1
+- H=8388608, K=3, S=2, P=1, d=1
+- H=16777216, K=4, S=2, P=1, d=2
+- H=33554432, K=3, S=1, P=1, d=1
+- H=67108864, K=5, S=3, P=2, d=1

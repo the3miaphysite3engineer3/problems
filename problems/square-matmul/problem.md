@@ -21,3 +21,11 @@ $$
 ## Notes:
 - All matrices $\text{A}$, $\text{B}$, and $\text{C}$ are stored in row-major order
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/1_Square_matrix_multiplication_.py)
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x6144
+- 7168x7168
+- 8192x8192
+- 9216x9216

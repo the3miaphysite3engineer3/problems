@@ -25,3 +25,10 @@ where the mean is computed along the feature dimension for each sample in the ba
 ## Notes:
 - For each sample, the RMS is calculated over the feature dimension (dimension 1).
 - Use $\epsilon = 10^{-5}$ for numerical stability.
+
+## Test Case Sizes
+
+- shape=(1024, 1024)
+- shape=(1024, 4096)
+- shape=(2048, 8192)
+- shape=(512, 16384)

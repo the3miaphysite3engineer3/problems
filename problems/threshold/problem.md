@@ -28,4 +28,16 @@ This operation converts a grayscale image into a binary (black and white) image 
 - In memory, the tensor is stored in row-major order
 - The memory layout is [row0_col0, row0_col1, ..., row1_col0, ...]
 - Pixel values are in the range [0, 255] for both input and output
-- Output values are strictly binary: 0 for pixels below or equal to threshold, 255 for pixels above threshold 
+- Output values are strictly binary: 0 for pixels below or equal to threshold, 255 for pixels above threshold
+
+## Test Case Sizes
+
+- 1024x768, threshold=64.0
+- 1024x768, threshold=128.0
+- 1024x768, threshold=192.0
+- 1920x1080, threshold=64.0
+- 1920x1080, threshold=128.0
+- 1920x1080, threshold=192.0
+- 3840x2160, threshold=64.0
+- 3840x2160, threshold=128.0
+- 3840x2160, threshold=192.0

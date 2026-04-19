@@ -34,3 +34,11 @@ where:
 - The loss is calculated for each triplet in the batch, then averaged over the batch.
 - A properly implemented triplet loss should ensure that $d(a, p) + \text{margin} < d(a, n)$ for all triplets after training.
 - The default margin value is `1.0`, but the implementation should support arbitrary positive margin values.
+
+## Test Case Sizes
+
+- batch=128, embedding_dim=4096
+- batch=256, embedding_dim=8192
+- batch=256, embedding_dim=16384
+- batch=512, embedding_dim=8192
+- batch=1024, embedding_dim=1024

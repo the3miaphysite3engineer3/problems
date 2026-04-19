@@ -30,3 +30,11 @@ Note: $B$ is stored in row-major as $N \times K$ (i.e. $B_{\mathrm{dequant}}$ is
 - We use [torch.scaled_mm](https://pytorch.org/docs/stable/generated/torch.nn.functional.scaled_mm.html) as the reference implementation for correctness. `scaled_mm` expects the second matrix in column-major layout; the reference therefore passes $B_{\mathrm{dequant}}^T$ (shape $K \times N$) as the second argument so the result remains $c = A_{\mathrm{dequant}} B_{\mathrm{dequant}}$ (logically unchanged).
 - Scale tensors passed as $scale\_a$ / $scale\_b$ are assumed to already be laid out in the same [swizzled blockwise format](https://github.com/pytorch/pytorch/blob/b9698289591834e133d705e6c5c7840e18fb54b8/torch/csrc/Module.cpp#L2722-L2728) that `scaled_mm` uses for MXFP8. 
 - You should treat these pointers as already-swizzled 32x4x4 layout scale storage and must _not_ apply an additional swizzle.
+
+## Test Case Sizes
+
+- 1024 x 1024 x 1024
+- 2048 x 1024 x 2048
+- 4096 x 2048 x 4096
+- 4096 x 4096 x 4096
+- 8192 x 4096 x 8192

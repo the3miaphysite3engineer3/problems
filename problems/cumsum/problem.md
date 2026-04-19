@@ -22,3 +22,11 @@ The cumulative sum at each position is the sum of all elements up to and includi
 ## Notes:
 - The first element of the output is equal to the first element of the input
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/89_cumsum.py)
+
+## Test Case Sizes
+
+- N=65536
+- N=131072
+- N=262144
+- N=524288
+- N=1048576

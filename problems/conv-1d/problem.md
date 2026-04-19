@@ -33,3 +33,10 @@ The convolution operation slides the kernel over the input signal, computing the
 - Output size is $N$ (same as input) due to padding
 - This matches PyTorch `torch.nn.functional.conv1d(..., padding=K//2)` (cross-correlation, kernel is not flipped)
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/67_conv_standard_1D.py)
+
+## Test Case Sizes
+
+- N=65536, K=8191
+- N=32768, K=8191
+- N=131072, K=8191
+- N=524288, K=8191

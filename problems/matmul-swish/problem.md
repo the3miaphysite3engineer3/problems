@@ -33,3 +33,11 @@ The operation consists of three main steps:
 ## Notes:
 - All matrices are stored in row-major order
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level2/59_Matmul_Swish_Scaling.py)
+
+## Test Case Sizes
+
+- B=128, In=1024, Out=512, Scale=2.0
+- B=256, In=2048, Out=1024, Scale=1.5
+- B=64, In=512, Out=256, Scale=0.5
+- B=512, In=4096, Out=2048, Scale=3.0
+- B=32, In=256, Out=128, Scale=1.0

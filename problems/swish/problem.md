@@ -25,3 +25,11 @@ $$
 ## Notes:
 - Both matrices $\text{A}$ and $\text{C}$ are stored in row-major order
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/25_Swish.py)
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x4096
+- 4096x7168
+- 4096x8192
+- 8192x8192

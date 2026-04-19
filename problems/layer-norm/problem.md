@@ -28,3 +28,10 @@ where the mean $\mathrm{E}[x]$ and variance $\mathrm{Var}[x]$ are computed over 
 - Apply the normalization using the computed mean/variance and the provided $\gamma$ and $\beta$.
 - Use $\epsilon = 10^{-5}$
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/40_LayerNorm.py)
+
+## Test Case Sizes
+
+- B=16, F=64, D1=32, D2=32
+- B=32, F=128, D1=64, D2=64
+- B=8, F=256, D1=128, D2=128
+- B=4, F=512, D1=32, D2=32

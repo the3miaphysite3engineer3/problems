@@ -31,3 +31,11 @@ The average pooling operation slides a window of size $k \times k \times k$ over
 - For values outside the input boundaries (after padding), use zero values in the average computation
 - The denominator ($k^3$) should always be the full kernel size, even when some elements are outside the input boundaries
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/46_Average_Pooling_3D.py)
+
+## Test Case Sizes
+
+- H=192, W=192, D=192, K=5, S=2, P=2
+- H=224, W=224, D=224, K=7, S=3, P=3
+- H=512, W=512, D=512, K=3, S=3, P=1
+- H=784, W=784, D=784, K=5, S=2, P=2
+- H=1024, W=1024, D=1024, K=3, S=3, P=1

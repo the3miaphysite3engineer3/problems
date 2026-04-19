@@ -37,3 +37,10 @@ $$
   uint64_t prod = (uint64_t)a[i] * (uint64_t)b[i];
   c[i] = (uint32_t)(prod % P);
   ```
+
+## Test Case Sizes
+
+- n = 2^20
+- n = 2^22
+- n = 2^24
+- n = 2^25

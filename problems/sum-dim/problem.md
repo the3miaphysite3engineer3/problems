@@ -28,3 +28,12 @@ where $d$ is the dimension to reduce over, $n$ is the number of dimensions, and 
 - The reduction should maintain numerical stability by using appropriate accumulation techniques
 - The output tensor preserves the dimensionality of the input tensor with the reduced dimension having size 1
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/47_Sum_reduction_over_a_dimension.py)
+
+## Test Case Sizes
+
+- shape=(16, 128, 256), dim=1
+- shape=(32, 512, 512), dim=0
+- shape=(8, 1024, 1024), dim=2
+- shape=(64, 128, 128, 128), dim=2
+- shape=(4, 256, 256, 256), dim=1
+- shape=(128, 64, 64, 64), dim=3

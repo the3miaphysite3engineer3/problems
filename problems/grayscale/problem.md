@@ -24,4 +24,11 @@ This formula accounts for human perception of color, with green contributing mos
 - In memory, the tensor is stored in row-major order with interleaved channels (R,G,B,R,G,B,...)
 - Each pixel has 3 channels in RGB order
 - Pixel values are in the range [0, 255] for both input and output
-- The output is a single-channel grayscale image 
+- The output is a single-channel grayscale image
+
+## Test Case Sizes
+
+- 512x512
+- 1024x768
+- 1920x1080
+- 3840x2160

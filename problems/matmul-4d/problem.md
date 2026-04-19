@@ -21,3 +21,10 @@ $$
 ## Notes:
 - All tensors $\text{A}$, $\text{B}$, and $\text{C}$ are stored in row-major order
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/11_4D_tensor_matrix_multiplication.py)
+
+## Test Case Sizes
+
+- 16x256x512x256 x 256x768
+- 8x128x256x128 x 128x512
+- 32x64x128x64 x 64x256
+- 4x32x64x32 x 32x128

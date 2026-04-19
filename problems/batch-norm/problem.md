@@ -27,3 +27,10 @@ where the mean $\mathrm{E}[x]$ and variance $\mathrm{Var}[x]$ are computed over 
 - Use $\epsilon = 10^{-5}$
 - For simplicity, this implementation focuses on the core normalization without learnable parameters (gamma and beta) and without tracking running statistics.
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/33_BatchNorm.py)
+
+## Test Case Sizes
+
+- B=16, F=64, D1=256, D2=256
+- B=32, F=128, D1=128, D2=128
+- B=8, F=256, D1=64, D2=64
+- B=4, F=32, D1=512, D2=512

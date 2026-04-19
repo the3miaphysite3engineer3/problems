@@ -30,3 +30,12 @@ The average pooling operation slides a window of size $k \times k$ over the inpu
 - For values outside the input boundaries (after padding), use zero values in the average computation
 - The denominator ($k^2$) should always be the full kernel size, even when some elements are outside the input boundaries
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/45_Average_Pooling_2D.py)
+
+## Test Case Sizes
+
+- H=8192, W=4096, K=2, S=2, P=0
+- H=8192, W=8192, K=3, S=2, P=1
+- H=16384, W=16384, K=4, S=4, P=2
+- H=8192, W=8192, K=3, S=3, P=1
+- H=2048, W=2048, K=5, S=2, P=2
+- H=4096, W=4096, K=7, S=3, P=3

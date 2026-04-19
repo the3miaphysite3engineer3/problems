@@ -26,3 +26,13 @@ where $x_i$ represents elements along the specified dimension $d$, and $S_d$ is 
 - The input tensor is stored in row-major order
 - The output values should be in the range (0, 1)
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/23_Softmax.py)
+
+## Test Case Sizes
+
+- shape=(16, 128, 256), dim=1, dist=normal
+- shape=(32, 512, 512), dim=2, dist=uniform
+- shape=(8, 1024, 1024), dim=1, dist=normal
+- shape=(64, 128, 128, 128), dim=2, dist=uniform
+- shape=(4, 256, 256, 256), dim=3, dist=normal
+- shape=(128, 10), dim=1, dist=normal
+- shape=(256, 50, 50), dim=0, dist=uniform
