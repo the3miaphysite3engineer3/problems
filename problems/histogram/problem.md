@@ -27,3 +27,15 @@ This creates a frequency distribution showing how many pixels have each intensit
 - The input tensor contains integer pixel values in range [0, num_bins-1]
 - Each histogram bin counts pixels with that specific intensity value
 - The sum of all histogram bins equals the total number of pixels
+
+## Test Case Sizes
+
+- 2560x1440, bins=64
+- 2560x1440, bins=128
+- 2560x1440, bins=256
+- 2048x2048, bins=64
+- 2048x2048, bins=128
+- 2048x2048, bins=256
+- 4096x4096, bins=64
+- 4096x4096, bins=128
+- 4096x4096, bins=256

@@ -81,3 +81,9 @@ for (size_t i = 0; i < n; ++i) {
   }
 }
 ```
+
+## Test Case Sizes
+
+- n = 2^6
+- n = 2^8
+- n = 2^10

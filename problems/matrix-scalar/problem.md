@@ -22,3 +22,16 @@ where $s$ is the scalar value.
 ## Notes:
 - Matrix $\text{A}$ is stored in row-major order
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/5_Matrix_scalar_multiplication.py)
+
+## Test Case Sizes
+
+- 8192x8192 scalar=0.1
+- 8192x8192 scalar=0.2
+- 8192x8192 scalar=-0.3
+- 8192x8192 scalar=0.4
+- 8192x8192 scalar=-0.5
+- 9216x9216 scalar=0.1
+- 9216x9216 scalar=0.2
+- 9216x9216 scalar=-0.3
+- 9216x9216 scalar=0.4
+- 9216x9216 scalar=-0.5

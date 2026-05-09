@@ -21,3 +21,10 @@ $$
 ## Output
 - Array $d$ of size $N$ containing shortest distances from source $s$ to all nodes. If a node is unreachable, its distance should be $-1$.
 
+## Test Case Sizes
+
+- n = 512
+- n = 2048
+- n = 4096
+- n = 6144
+- n = 8192

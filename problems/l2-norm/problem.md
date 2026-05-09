@@ -23,3 +23,11 @@ where the sum of squared values is computed across the second dimension (D) for 
 ## Notes:
 - For numerical stability, you may need to add a small epsilon $\epsilon = 10^{-10}$ to the denominator to avoid division by zero.
 - After normalization, the L2 norm of each row should be approximately 1.0.
+
+## Test Case Sizes
+
+- B=128, D=4096
+- B=256, D=4096
+- B=128, D=8192
+- B=256, D=8192
+- B=128, D=16384

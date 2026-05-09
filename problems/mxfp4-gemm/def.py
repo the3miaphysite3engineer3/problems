@@ -41,10 +41,10 @@ class mxfp4_gemm(Problem):
             raise RuntimeError("torch.nn.functional.scaled_mm is required for this problem.")
 
         with torch.no_grad():
-            a_q = q_a.view(torch.float4_e2m1fn_x2)
-            b_q = q_b.view(torch.float4_e2m1fn_x2)
-            s_a = scale_a.view(torch.float8_e8m0fnu).flatten()
-            s_b = scale_b.view(torch.float8_e8m0fnu).flatten()
+            a_q = q_a.contiguous().view(torch.float4_e2m1fn_x2)
+            b_q = q_b.contiguous().view(torch.float4_e2m1fn_x2)
+            s_a = scale_a.contiguous().view(torch.float8_e8m0fnu).flatten()
+            s_b = scale_b.contiguous().view(torch.float8_e8m0fnu).flatten()
 
             return F.scaled_mm(
                 a_q,

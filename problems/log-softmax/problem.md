@@ -47,3 +47,11 @@ $$
 - For numerical stability, consider using the identity: $\log\text{softmax}(x_i) = x_i - \max(x) - \log\sum_k e^{x_k - \max(x)}$
 - Log-Softmax is commonly used as the final layer in classification models paired with Negative Log-Likelihood loss
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/24_LogSoftmax.py)
+
+## Test Case Sizes
+
+- 4096x4096
+- 6144x4096
+- 4096x7168
+- 4096x8192
+- 8192x8192

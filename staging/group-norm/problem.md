@@ -61,3 +61,11 @@ where the mean $\mathrm{E}[x]$ and variance $\mathrm{Var}[x]$ are computed withi
 - The mean and variance are computed across all spatial dimensions and the channels within each group.
 - For each sample in the batch, the features are divided into $\text{N}$ groups, each with $\frac{\text{N}}{\text{G}}$ channels.
 - Use $\epsilon = 10^{-5}$ for numerical stability.
+
+## Test Case Sizes
+
+- batch=16, features=64, groups=8, dims=[32, 32]
+- batch=32, features=128, groups=16, dims=[64, 64]
+- batch=8, features=32, groups=4, dims=[16, 16]
+- batch=4, features=64, groups=8, dims=[32, 32, 32]
+- batch=16, features=32, groups=8, dims=[]

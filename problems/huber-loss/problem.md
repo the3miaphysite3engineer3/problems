@@ -37,3 +37,10 @@ $$
 - All tensors are flat 1D arrays (or treated as such) and stored contiguously in memory.
 - The value $\delta$ for Huber loss is fixed at 1.
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/96_HuberLoss.py)
+
+## Test Case Sizes
+
+- N=1048576
+- N=4194304
+- N=16777216
+- N=67108864

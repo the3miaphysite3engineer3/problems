@@ -29,3 +29,15 @@ For a square matrix $A$ and non-negative integer $n$:
 
 ## Notes:
 - Matrix $A$ is stored in row-major order
+
+## Test Case Sizes
+
+- 512x512 power=2
+- 512x512 power=4
+- 512x512 power=8
+- 1024x1024 power=2
+- 1024x1024 power=4
+- 1024x1024 power=8
+- 2048x2048 power=2
+- 2048x2048 power=4
+- 2048x2048 power=8

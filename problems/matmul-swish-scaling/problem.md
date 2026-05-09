@@ -29,3 +29,10 @@ This operation consists of three steps:
 
 ## Notes:
 - All matrices $A$, $B$, and $O$ are stored in row-major order
+
+## Test Case Sizes
+
+- 512x512 x 512x512
+- 1024x1024 x 1024x512
+- 512x512 x 512x1024
+- 1024x1024 x 1024x1024

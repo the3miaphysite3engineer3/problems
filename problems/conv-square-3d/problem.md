@@ -26,3 +26,12 @@ The convolution operation slides the 3D kernel over the input volume, computing 
 - Use zero padding at the boundaries where the kernel extends beyond the input volume
 - The kernel is centered at each position, with $(K-1)/2$ elements on each side in all dimensions
 - This problem is adapted from [KernelBench](https://github.com/ScalingIntelligence/KernelBench/blob/main/KernelBench/level1/54_conv_standard_3D__square_input__square_kernel.py)
+
+## Test Case Sizes
+
+- D=H=W=64, K=3
+- D=H=W=32, K=9
+- D=H=W=96, K=11
+- D=H=W=128, K=5
+- D=H=W=256, K=7
+- D=H=W=512, K=9

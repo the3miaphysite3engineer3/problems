@@ -33,3 +33,11 @@ $$
 
 - The reference implementation in this problem calls [torch.nn.functional.scaled_mm](https://pytorch.org/docs/stable/generated/torch.nn.functional.scaled_mm.html) and does **not** materialize $A_{\mathrm{dequant}}$ or $B_{\mathrm{dequant}}$.
 - The `scale_a` and `scale_b` inputs are already in swizzled $32 \times 4 \times 4$ layout; do not apply an additional swizzle.
+
+## Test Case Sizes
+
+- 1024 x 1024 x 1024
+- 2048 x 1024 x 2048
+- 4096 x 2048 x 4096
+- 4096 x 4096 x 4096
+- 8192 x 4096 x 8192

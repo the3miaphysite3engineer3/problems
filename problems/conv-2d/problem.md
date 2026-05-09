@@ -25,3 +25,12 @@ The convolution operation slides the 2D kernel over the input image, computing t
 - All matrices $\text{A}$, $\text{B}$, and $\text{C}$ are stored in row-major order
 - Use zero padding at the boundaries where the kernel extends beyond the input image
 - The kernel is centered at each position, with $(K_h-1)/2$ rows and $(K_w-1)/2$ columns on each side
+
+## Test Case Sizes
+
+- H=4096, W=4096, Kh=9, Kw=9
+- H=8192, W=8192, Kh=11, Kw=11
+- H=16384, W=16384, Kh=13, Kw=13
+- H=1024, W=1024, Kh=31, Kw=31
+- H=2048, W=2048, Kh=63, Kw=63
+- H=4096, W=4096, Kh=127, Kw=127

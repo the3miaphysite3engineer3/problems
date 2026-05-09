@@ -58,3 +58,11 @@ where the mean $\mathrm{E}[x_{n,c}]$ and variance $\mathrm{Var}[x_{n,c}]$ are co
 - For this problem, take learnable parameters $\gamma = 1$ and $\beta = 0$.
 - For a 4D input tensor of shape $(\text{B}, \text{N}, \text{height}, \text{width})$, normalization is performed across height and width dimensions for each channel independently.
 - Use $\epsilon = 10^{-5}$ for numerical stability.
+
+## Test Case Sizes
+
+- batch=16, features=64, height=32, width=32
+- batch=32, features=128, height=64, width=64
+- batch=8, features=32, height=16, width=16
+- batch=4, features=16, height=128, width=128
+- batch=64, features=3, height=224, width=224

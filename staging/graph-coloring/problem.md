@@ -66,4 +66,11 @@ Verification:
 - Vertex ordering can affect the number of colors used
 - For dense graphs with cliques, more colors will be required
 - Handle edge cases like empty graphs or isolated vertices
-- Use efficient data structures for neighbor lookup and color checking 
+- Use efficient data structures for neighbor lookup and color checking
+
+## Test Case Sizes
+
+- n = 1024
+- n = 2048
+- n = 4096
+- n = 6144

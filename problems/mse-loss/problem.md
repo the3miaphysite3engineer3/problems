@@ -27,3 +27,11 @@ where $y_i$ represents the predictions, $\hat{y}_i$ represents the targets, and 
 - The MSE loss is a scalar value that represents the average squared difference between predictions and targets
 - This implementation should handle tensors of arbitrary shapes
 - For numerical stability, consider intermediate steps carefully
+
+## Test Case Sizes
+
+- shape=(4096, 4096)
+- shape=(8192, 8192)
+- shape=(512, 512, 512)
+- shape=(64, 64, 64, 64)
+- shape=(32, 32, 32, 32, 32)

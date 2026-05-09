@@ -48,3 +48,10 @@ Instead of storing the scale factors in naive row-major order, they must be arra
 To do this, we first tile the 2D array into 128-row $\times$ 4-column tiles (pad M to a multiple of 128, this will be needed to pass the sample). Then, _within_ each 128-row M-tile, reorder the 128 rows as a 32 $\times$ 4 column-major block. That is, rows 0..31 go first, then 32..63, 64..95, 96..127, but interleaved column-first so that rows 32 apart in logical space become adjacent in memory. Thus, the memory order is: 0, 32, 64, 96, 1, 33, 65, 97, etc.  Check out the [cuBLAS 1D Block Scaling Factors Layout](https://docs.nvidia.com/cuda/cublas/#d-block-scaling-factors-layout) documentation for more info.
 
 We use FlashInfer's [nvfp4_quantize](https://docs.flashinfer.ai/generated/flashinfer.fp4_quantization.nvfp4_quantize.html) with `SfLayout.layout_128x4` (the default layout) as the ground truth. Submissions are validated by dequantizing both the reference and submitted outputs via [e2m1_and_ufp8sf_scale_to_float](https://docs.flashinfer.ai/generated/flashinfer.fp4_quantization.e2m1_and_ufp8sf_scale_to_float.html) and checking closeness.
+
+## Test Case Sizes
+
+- 1024 x 1024
+- 2048 x 2048
+- 4096 x 8192
+- 8192 x 4096

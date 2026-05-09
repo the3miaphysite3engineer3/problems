@@ -34,3 +34,11 @@ Note that when `targets[i]` is 0, the contribution to the KL divergence is 0 (by
 - You should handle the case where `targets[i]` is 0 correctly (the contribution should be 0).
 - To avoid numerical issues, you should add a small epsilon (e.g., 1e-10) to predictions and targets before computing logarithms.
 - The full KL divergence can be computed by summing all elements of the output tensor.
+
+## Test Case Sizes
+
+- N=1048576
+- N=4194304
+- N=16777216
+- N=67108864
+- Sparse_targets
